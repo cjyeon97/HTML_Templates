@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbaord Template</title>
+    <link rel="stylesheet" href="./assets/css/theme.css">
+</head>
+<body>
+    <div id="app">
+        <div id="sidebar">
+            <div id="sidebar-content">
+                <a href="#">
+                    <h1 id="brand">Dashboard</h1>
+                </a>
+                <div id="close-menu-button">
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav id="sidebar-navigation">
+                    <div class="ditem">
+                        <span class="small">APPS</span>
+                        <a class="item active" href="#">
+                            <div class="icon">
+                                <ion-icon name="albums-outline"></ion-icon>
+                            </div>
+                            Dashboard
+                        </a>
+                        <a class="item" href="#">
+                            <div class="icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            Mailbox
+                        </a>
+                        <a class="item" href="#">
+                            <div class="icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </div>
+                            Profile
+                        </a>
+                        <a class="item" href="#">
+                            <div class="icon">
+                                <ion-icon name="cloudy-outline"></ion-icon>
+                            </div>
+                            File Manager
+                        </a>
+                        <a class="item" href="#">
+                            <div class="icon">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                            </div>
+                            Calendar
+                        </a>
+                        <a class="item" href="#">
+                            <div class="icon">
+                                <ion-icon name="albums-outline"></ion-icon>
+                            </div>
+                            Todo
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="contentside">
+            <div id="header">
+                <div class="left centered-vertically">
+                    <div id="menu-button">
+                        <div class="items">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-button">
+                            <div class="avatar centered-vertically">
+                                <div class="lazyImageLoader">
+                                    <img onload="lazyImageLoader(this)" src="https://picsum.photos/900/900">
+                                </div>
+                                <div class="text">
+                                    Maximilian 
+                                    <div class="bottom-arrow">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#" class="item">
+                                Setting & Privacy
+                            </a>
+                            <a href="#" class="item">
+                                Switch Account
+                            </a>
+                            <div class="divider"></div>
+                            <a href="#" class="item">
+                                Log out
+                            </a>
+                        </div>
+                    </div>
+                    <nav id="header-navigation">
+                        <a href="https://github.com/tahadostifam" class="nav-item">
+                            <div class="icon">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </div>
+                        </a>
+                    </nav>
+                </div>
+                <div class="right centered-vertically">
+                    <div class="search-box">
+                        <form action="/">
+                            <input type="text" placeholder="Search Something..." class="input" name="search">
+                        </form>
+                    </div>
+                    <div class="search-box-mb">
+                        <div class="icon">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </div>
+                        <div class="content">
+                            <form action="/">
+                                <input maxlength="61" type="text" placeholder="Search Something..." class="input" name="search">
+                            </form>
+                            <div id="close-search-box-mb-button">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="body">
+                <div style="height: 60px; display: block;">
+                    <div class="left" style="padding-top: 23px;">
+                        <div class="text">
+                            <a href="#" class="small colored">APPS</a>
+                            <span class="slash-sep">/</span>
+                            <a href="#" class="small">Dashboard</a>
+                        </div>
+                    </div>
+                    <div class="right" style="margin-top: 9px;">
+                        <button class="btn btn-secondary">Settings</button>
+                        <a href="#" style="margin-left: 5px;">
+                            <button class="btn btn-primary">Upgrade</button>
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div id="intros">
+                    <div class="card-body">
+                        <div class="stat-icon danger">
+                            <ion-icon name="trending-down-outline"></ion-icon>
+                        </div>
+                        <div class="header">
+                            $3,089.67
+                            <div class="stat">
+                                <span class="stat-danger">-8%</span>
+                            </div>
+                        </div>
+                        <p class="des">
+                            Total revenue for last 20 days
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <div class="stat-icon success">
+                            <ion-icon name="trending-up-outline"></ion-icon>
+                        </div>
+                        <div class="header">
+                            168,047
+                            <div class="stat">
+                                <span class="stat-success">-8%</span>
+                            </div>
+                        </div>
+                        <p class="des">
+                            Total revenue for last 20 days
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <div class="stat-icon success">
+                            <ion-icon name="trending-up-outline"></ion-icon>
+                        </div>
+                        <div class="header">
+                            47,350
+                            <div class="stat">
+                                <span class="stat-success">16%</span>
+                            </div>
+                        </div>
+                        <p class="des">
+                            Total revenue for last 20 days  
+                        </p>
+                    </div>
+                </div>
+                <div id="analytics-1" style="margin-bottom: 20px;">
+                    <div>
+                        <div class="shadow-box">
+                            <div class="header">
+                                <div class="title">
+                                    SAVINGS
+                                </div>
+                                <div class="span">30 Days</div>
+                            </div>                            
+                            <div class="content">
+                                <img src="https://via.placeholder.com/1500x900" alt="image">
+                            </div>
+                        </div>
+                        <div class="shadow-box">
+                            <div class="header">
+                                <div class="title">
+                                    Popular Products
+                                </div>
+                                <div class="span">Today</div>
+                            </div>                            
+                            <div class="content">
+                                <div class="product-item">
+                                    <div class="title">
+                                        Alpha - File Hosting Service
+                                    </div>
+                                    <div class="small">4,037 downloads</div>
+                                    <div class="icon success">
+                                        <ion-icon name="arrow-up-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="title">
+                                        Lime - Task Managment Dashboard
+                                    </div>
+                                    <div class="small">1,876 downloads</div>
+                                    <div class="icon success">
+                                        <ion-icon name="arrow-up-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="title">
+                                        Space - Meetup Hosting App
+                                    </div>
+                                    <div class="small">1,252 downloads</div>
+                                    <div class="icon danger">
+                                        <ion-icon name="arrow-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="title">
+                                        Meteor - Messaging App
+                                    </div>
+                                    <div class="small">938 downloads</div>
+                                    <div class="icon success">
+                                        <ion-icon name="arrow-up-outline"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-box">
+                        <div class="tab-changer">
+                            <div class="tabs">
+                                <div class="btn btn-primary">
+                                    Visitors
+                                </div>
+                                <div class="btn">
+                                    REPORTS
+                                </div>
+                                <div class="btn">
+                                    INVESTMENTS
+                                </div>
+                            </div>
+                            <div class="split">
+                                <div class="item">
+                                    <span class="small">Total visitors in the current period:</span>
+                                    <h3 class="value">58,403</h3>
+                                    <span class="small">6-26 Apr</span>
+                                </div>
+                                <div class="item">
+                                    <span class="small">Unique visitors in the current period and ratio:</span>
+                                    <h3 class="value">77,871</h3>
+                                    <span class="small">6-26 Apr</span>
+                                </div>
+                            </div>
+                            <img src="https://via.placeholder.com/1500x900" style="height: 520px;" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="alert info">
+                    Data has been updated 35 minutes ago, go to the reports page to access data history.
+                </div>
+            </div>
+            <div class="footer">
+                <span class="small">
+                    developed with ❤️ by tahadostifam.ir
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
